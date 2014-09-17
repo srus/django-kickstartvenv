@@ -26,3 +26,15 @@ Project deployment
 ------------------
 
 Move to the same path as this file and run: `./bin/build.sh`
+
+
+Directory structure
+-------------------
+
+- **bin/**: scripts.
+- **boot/**: bootstrap templates for config files.
+- **conf/**: config files.
+- **docs/**: project documentation.
+- **requirements/**: Python dependencies.
+- **src/**: your Django project lives here.
+
