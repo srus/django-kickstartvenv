@@ -2,8 +2,8 @@
 # This hook is run after this virtualenv is activated.
 
 export PROJECTROOT="{{path}}"
-export IPYTHONDIR=$PROJECTROOT/conf/ipython
+export IPYTHONDIR="${PROJECTROOT}/conf/ipython"
 
-cd $PROJECTROOT
+cd "$PROJECTROOT"
 PS1="\[\e[34;1m\](`basename \"$VIRTUAL_ENV\"`)\[\e[0m\] $_OLD_VIRTUAL_PS1"
 
