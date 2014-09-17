@@ -17,6 +17,11 @@ echo ""
 # Save current path
 proj_path="`pwd`"
 
+# Check if dir exists
+if [[ ! -d "conf" ]]; then
+    mkdir "conf"
+fi
+
 # Build virtualenv environment
 source /usr/local/bin/virtualenvwrapper.sh
 mkvirtualenv "$venv_name"
