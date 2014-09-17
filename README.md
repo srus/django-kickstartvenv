@@ -33,7 +33,7 @@ Directory structure
 
 - **bin/**: scripts.
 - **boot/**: bootstrap templates for config files.
-- **conf/**: config files.
+- **conf/**: config files; generated automatically on every build.
 - **docs/**: project documentation.
 - **requirements/**: Python dependencies.
 - **src/**: your Django project lives here.
