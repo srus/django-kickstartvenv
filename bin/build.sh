@@ -72,14 +72,4 @@ echo ""
 echo -e "${bldgrn}OK, project deployed.${txtrst}"
 echo ""
 
-# Finally cleaning up...
-unset txtrst
-unset txtylw
-unset txtgrn
-unset bldgrn
-unset venv_name
-unset proj_path
-unset django_name
-unset p
-
 exit 0
