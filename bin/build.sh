@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Some colors
 txtrst='\e[0m'     # text reset
