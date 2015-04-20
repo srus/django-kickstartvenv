@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Current path
-proj_path="`pwd`"
-
 # Some colors
 txtrst='\e[0m'     # text reset
 txtylw='\e[0;33m'  # regular yellow
@@ -16,6 +13,9 @@ read venv_name
 echo -en "${txtylw}Name of Django project: ${txtrst}"
 read django_name
 echo ""
+
+# Current path
+proj_path="`pwd`"
 
 # Check if dir exists
 if [[ ! -d "${proj_path}/conf" ]]; then
