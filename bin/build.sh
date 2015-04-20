@@ -43,6 +43,9 @@ echo ""
 # Install Python packages
 pip install -U -r "${proj_path}/requirements/development.txt" || { echo "FATAL: Could not install Python packages"; exit 1; }
 
+# Create link to Python packages
+ln -sf "$WORKON_HOME/${venv_name}/lib/python2.7/site-packages" "${proj_path}/python_packages"
+
 echo ""
 echo -e "${txtgrn}Configuring IPython...${txtrst}"
 echo ""
