@@ -1,35 +1,26 @@
-django-kickstartvenv
-====================
+# django-kickstartvenv
 
-Django project skeleton with Virtualenv.
+Django project skeleton with [Virtualenv](https://github.com/pypa/virtualenv).
 
-
-Features
---------
+## Main features
 
 - Common skeleton for a broad range of Django projects.
 - Project deployment in one build step.
 - IPython pre-configured for compatibility with Python 3 syntax.
 - Some useful pre-configurations for your Virtualenv postactivate script.
 
+## System requirements
 
-System requirements
--------------------
+- Python ^2.7.3
+- Pip ^6.0.8
+- Virtualenv ^12.0.7
+- Virtualenvwrapper ^4.3.2
 
-- Python >=2.7.3
-- Pip >=1.5.3
-- Virtualenv >=1.11.6
-- Virtualenvwrapper >=4.2
-
-
-Project deployment
-------------------
+## Project deployment
 
 Move to the same path as this file and run: `./bin/build.sh`
 
-
-Directory structure
--------------------
+## Directory structure
 
 - **bin/**: scripts.
 - **boot/**: bootstrap templates for config files.
