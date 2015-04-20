@@ -18,7 +18,7 @@ Django project skeleton with [Virtualenv](https://github.com/pypa/virtualenv).
 
 ## Project deployment
 
-Move to the same path as this file and run: `./bin/build.sh`
+Move to the same path as this file and run: `./bin/install.sh`
 
 ## Directory structure
 
