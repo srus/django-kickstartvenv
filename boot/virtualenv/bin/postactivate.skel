@@ -3,7 +3,7 @@
 
 PS1="\[\e[34;1m\](`basename \"$VIRTUAL_ENV\"`)\[\e[0m\] $_OLD_VIRTUAL_PS1"
 
-proj_path="{{path}}"
+proj_path="{{proj_path}}"
 
 export IPYTHONDIR="${proj_path}/conf/ipython"
 

@@ -29,8 +29,8 @@ mkvirtualenv "$venv_name"
 # Set and activate virtualenv postactivate script
 cd "${proj_path}/boot/virtualenv/bin/"
 cp postactivate.skel postactivate
-p="${proj_path//\//\\/}"  # escape forward slashes
-sed -i "s/{{path}}/$p/g" postactivate
+path="${proj_path//\//\\/}"  # escape forward slashes
+sed -i "s/{{proj_path}}/$path/g" postactivate
 mv -f postactivate "${WORKON_HOME}/${venv_name}/bin/postactivate"
 deactivate
 source /usr/local/bin/virtualenvwrapper.sh || { echo "FATAL: Could not find '/usr/local/bin/virtualenvwrapper.sh'"; exit 1; }
