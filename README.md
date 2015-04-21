@@ -11,10 +11,10 @@ Django project skeleton with [Virtualenv](https://github.com/pypa/virtualenv).
 
 ## System requirements
 
-- Python ^2.7.3
-- Pip ^6.0.8
-- Virtualenv ^12.0.7
-- Virtualenvwrapper ^4.3.2
+- Python 2.7
+- [Pip](https://pypi.python.org/pypi/pip/6.1.1)
+- [Virtualenv](https://pypi.python.org/pypi/virtualenv)
+- [Virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper/)
 
 ## Project deployment
 
