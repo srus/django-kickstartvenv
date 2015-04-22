@@ -59,7 +59,7 @@ cd "${proj_path}/boot/virtualenv/bin/"
 cp postactivate.skel postactivate
 path="${proj_path//\//\\/}"  # escape forward slashes
 sed -i "s/{{proj_path}}/$path/g" postactivate
-mv -f postactivate "${WORKON_HOME}/${venv_name}/bin/postactivate"
+mv -f postactivate "${VIRTUAL_ENV}/bin/postactivate"
 deactivate
 source "$venvwrapper"
 workon "$venv_name"
@@ -72,7 +72,7 @@ echo ""
 pip install -U -r "${proj_path}/requirements/development.txt" || { echo "FATAL: Could not install Python packages"; exit 1; }
 
 # Create link to Python packages
-ln -sf "$WORKON_HOME/${venv_name}/lib/python2.7/site-packages" "${proj_path}/python_packages"
+ln -sf "${VIRTUAL_ENV}/lib/python2.7/site-packages" "${proj_path}/python_packages"
 
 echo ""
 echo -e "${txtgrn}Configuring IPython...${txtrst}"
