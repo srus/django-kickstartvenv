@@ -72,7 +72,8 @@ echo ""
 pip install -U -r "${proj_path}/requirements/development.txt" || { echo "FATAL: Could not install Python packages"; exit 1; }
 
 # Create link to Python packages
-ln -sf "${VIRTUAL_ENV}/lib/python2.7/site-packages" "${proj_path}/python_packages"
+version='@([0-9]).@([0-9])'
+ln -sf ${VIRTUAL_ENV}/lib/python${version}/site-packages "${proj_path}/python_packages" || { echo "FATAL: Could not symlink Python site-packages"; exit 1; }
 
 echo ""
 echo -e "${txtgrn}Configuring IPython...${txtrst}"
