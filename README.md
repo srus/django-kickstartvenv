@@ -1,4 +1,4 @@
-# django-kickstartvenv
+# django-kickstartvenv [![Build status](https://travis-ci.org/srus/django-kickstartvenv.svg?branch=master)](https://travis-ci.org/srus/django-kickstartvenv)
 
 Django project skeleton with [Virtualenv](https://github.com/pypa/virtualenv).
 
