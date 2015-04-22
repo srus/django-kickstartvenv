@@ -16,6 +16,8 @@ Django project skeleton with [Virtualenv](https://github.com/pypa/virtualenv).
 - [Virtualenv](https://pypi.python.org/pypi/virtualenv)
 - [Virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper/)
 
+Currently supporting Python 2.7, 3.3 and above. For more information about versions see the [Travis page](https://travis-ci.org/srus/django-kickstartvenv).
+
 ## Project deployment
 
 Move to the same path as this file and run: `./bin/build.sh`. You can run this script both to install and update the project.
