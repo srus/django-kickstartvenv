@@ -14,6 +14,34 @@ echo -en "${txtylw}Name of Django project: ${txtrst}"
 read django_name
 echo ""
 
+# Check system dependencies
+
+if [[ -z "`which python`" ]]; then
+    echo "FATAL: Could not find 'python'"
+    echo "Please install Python: https://www.python.org/downloads/"
+    exit 1
+fi
+
+if [[ -z "`which pip`" ]]; then
+    echo "FATAL: Could not find 'pip'"
+    echo "Please install Pip: https://pypi.python.org/pypi/pip/"
+    exit 1
+fi
+
+if [[ -z "`which virtualenv`" ]]; then
+    echo "FATAL: Could not find 'virtualenv'"
+    echo "Please install Virtualenv: https://pypi.python.org/pypi/virtualenv/"
+    exit 1
+fi
+
+venvwrapper="`which virtualenvwrapper.sh`"
+
+if [[ -z "$venvwrapper" ]]; then
+    echo "FATAL: Could not find 'virtualenvwrapper.sh'"
+    echo "Please install Virtualenvwrapper: https://pypi.python.org/pypi/virtualenvwrapper/"
+    exit 1
+fi
+
 # Current path
 proj_path="`pwd`"
 
@@ -23,7 +51,7 @@ if [[ ! -d "${proj_path}/conf" ]]; then
 fi
 
 # Build virtualenv environment
-source /usr/local/bin/virtualenvwrapper.sh || { echo "FATAL: Could not find '/usr/local/bin/virtualenvwrapper.sh'"; exit 1; }
+source "$venvwrapper"
 mkvirtualenv "$venv_name"
 
 # Set and activate virtualenv postactivate script
@@ -33,7 +61,7 @@ path="${proj_path//\//\\/}"  # escape forward slashes
 sed -i "s/{{proj_path}}/$path/g" postactivate
 mv -f postactivate "${WORKON_HOME}/${venv_name}/bin/postactivate"
 deactivate
-source /usr/local/bin/virtualenvwrapper.sh || { echo "FATAL: Could not find '/usr/local/bin/virtualenvwrapper.sh'"; exit 1; }
+source "$venvwrapper"
 workon "$venv_name"
 
 echo ""
