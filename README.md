@@ -1,12 +1,12 @@
 # django-kickstartvenv [![Build status](https://travis-ci.org/srus/django-kickstartvenv.svg?branch=master)](https://travis-ci.org/srus/django-kickstartvenv)
 
-Start your next [Django](https://www.djangoproject.com/) based project with [Virtualenv](https://github.com/pypa/virtualenv) in a few seconds.
+Start your next [Django](https://www.djangoproject.com/) based project with a pre-configured virtual environment in a few seconds.
 
 ## Main features
 
 - Common skeleton for a broad range of Django projects.
 - Project deployment in one build step.
-- Virtual environment for Python based on [Virtualenv](https://pypi.python.org/pypi/virtualenv/) and [Virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper/).
+- Pre-configured virtual environment for Python (thanks to [Virtualenv](https://github.com/pypa/virtualenv) and [Virtualenvwrapper](https://bitbucket.org/dhellmann/virtualenvwrapper/)).
 - IPython pre-configured for compatibility with Python 3 syntax.
 - Some useful pre-configurations for Virtualenvwrapper [postactivate](http://virtualenvwrapper.readthedocs.org/en/latest/scripts.html#postactivate) script.
 
@@ -26,7 +26,7 @@ Currently supporting Python 2.7, 3.3 and above. For more information about versi
 - Add the Python dependencies in the `requirements` folder.
 - Move to the project root folder and run: `./bin/build.sh`. You can run this script whenever you need to update the project.
 
-Finally type `workon` and the name of your virtualenv to start working on your new project. See the [Virtualenvwrapper docs](http://virtualenvwrapper.readthedocs.org/) to learn more about the workflow with virtual environments.
+Finally type `workon` and the name of your virtualenv to start working on your new project. See the [Virtualenvwrapper docs](http://virtualenvwrapper.readthedocs.org/) to learn more about the workflow with this virtual environments manager.
 
 ## Directory structure
 
