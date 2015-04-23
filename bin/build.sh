@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Some colors
+# Prompt colors
 txtrst='\e[0m'     # text reset
 txtylw='\e[0;33m'  # regular yellow
 txtgrn='\e[0;32m'  # regular green
