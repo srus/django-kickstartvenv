@@ -21,10 +21,10 @@ Currently supporting Python 2.7, 3.3 and above. For more information about versi
 
 ## Project deployment
 
-- Download this project.
-- Rename the folder as you want.
-- Add the Python dependencies in the `requirements` folder.
-- Move to the project root folder and run: `./bin/build.sh`. You can run this script whenever you need to update the project.
+1. Download this project.
+2. Rename the folder as you want.
+3. Add the Python dependencies in the `requirements` folder.
+4. Move to the project root folder and run: `./bin/build.sh`. You can run this script whenever you need to update the project.
 
 Finally type `workon` and the name of your virtualenv to start working on your new project. See the [Virtualenvwrapper docs](http://virtualenvwrapper.readthedocs.org/) to learn more about the workflow with this virtual environments manager.
 
